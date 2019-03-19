@@ -1,0 +1,79 @@
+<ns0:test-suite xmlns:ns0="urn:model.allure.qatools.yandex.ru" start="1552964310086" stop="1552964310289">
+  <name>test01</name>
+  <labels/>
+  <test-cases>
+    <test-case start="1552964310086" status="passed" stop="1552964310086">
+      <name>Test01.test001</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="4424-MainThread"/>
+        <label name="host" value="DESKTOP-7MBGPGL"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps>
+        <step start="1552964310086" status="passed" stop="1552964310086">
+          <name>点击新增</name>
+          <title>点击新增</title>
+          <attachments>
+            <attachment source="1cd02bb1-25ba-4a69-bca8-173b9a0d9d1f-attachment.txt" title="新增输入一个地址" type="text/plain"/>
+            <attachment source="98b0e179-eed5-409e-8716-b0a6c0f933d6-attachment.txt" title="新增输入一个用户名" type="text/plain"/>
+            <attachment source="0372d8b6-76af-4560-8568-e1b2b8f04537-attachment.txt" title="新增输入一个电话号码" type="text/plain"/>
+            <attachment source="e8428d8a-82b7-4fc1-8d5a-336b44d93979-attachment.txt" title="新增输入一个紧急联系人" type="text/plain"/>
+          </attachments>
+          <steps/>
+        </step>
+      </steps>
+    </test-case>
+    <test-case start="1552964310101" status="passed" stop="1552964310101">
+      <name>Test01.test002</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="4424-MainThread"/>
+        <label name="host" value="DESKTOP-7MBGPGL"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1552964310101" status="failed" stop="1552964310273">
+      <name>Test01.test003</name>
+      <failure>
+        <message>AttributeError: module 'allure' has no attribute 'atture_type'</message>
+        <stack-trace>self = &lt;test01.Test01 object at 0x03664110&gt;
+
+    @allure.severity("critical")
+    def test003(self):
+        print("断言失败，截图并写入报告")
+        with open("./image/file.png","rb")as f:
+&gt;           allure.attach("失败原因：",f.read(),allure.atture_type.PNG)
+E           AttributeError: module 'allure' has no attribute 'atture_type'
+
+scripts\test01.py:26: AttributeError</stack-trace>
+      </failure>
+      <attachments/>
+      <labels>
+        <label name="severity" value="critical"/>
+        <label name="thread" value="4424-MainThread"/>
+        <label name="host" value="DESKTOP-7MBGPGL"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1552964310289" status="passed" stop="1552964310289">
+      <name>Test01.test004</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="4424-MainThread"/>
+        <label name="host" value="DESKTOP-7MBGPGL"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+  </test-cases>
+</ns0:test-suite>
